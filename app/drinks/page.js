@@ -13,6 +13,7 @@ const fetchdrink = async () => {
   const imgArray = drinks.map((drink, index) => ({
     imgLabel: drink.strGlass,
     imgPath: drink.strDrinkThumb,
+    idDrink: drink.idDrink,
     id: `my_modal_${index}`,
   }));
   return imgArray;
@@ -25,12 +26,7 @@ const DrinksPage = async () => {
       <h1 className="text-7xl my-10">drinks page</h1>
       <div className="grid grid-cols-4 gap-4">
         {images.map((img) => (
-          <Modal
-            key={img.id}
-            label={img.imgLabel}
-            img={img.imgPath}
-            id={img.id}
-          />
+          <Modal key={img.id} label={img.imgLabel} img={img.imgPath} id={img.id} idDrink={img.idDrink} />
         ))}
       </div>
     </div>

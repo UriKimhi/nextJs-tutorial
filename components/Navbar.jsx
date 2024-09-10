@@ -7,7 +7,7 @@ const GlobalNavbar = () => {
     { href: "/drinks", label: "drinks" },
     { href: "/tasks", label: "tasks" },
     { href: "/client", label: "client" },
-    { href: "/query", label: "query" },
+    { href: "/prisma-example", label: "prisma" },
   ];
   return (
     <div className="navbar bg-navbarbg">
@@ -20,7 +20,7 @@ const GlobalNavbar = () => {
         <ul className="menu menu-horizontal px-1 space-x-8">
           {links.map((link) => (
             <li key={link.href}>
-              <Link href={link.href} className="text-2xl">
+              <Link href={link.href} className="text-lg">
                 {link.label} page
               </Link>
             </li>

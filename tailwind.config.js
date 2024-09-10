@@ -13,6 +13,7 @@ module.exports = {
       silver: "#ecebff",
       bermuda: "#78dcca",
       navbarbg: "#e2e8f0",
+      taskDiv: "#00b6ff",
     },
     extend: {
       spacing: {
